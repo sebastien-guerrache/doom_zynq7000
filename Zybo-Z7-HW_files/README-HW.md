@@ -1,13 +1,45 @@
-# Create Vivado Hardware project
-1) Open Vivado
-2) Write in the TCL Console:
-      cd {C:/absolute/path/to}/Zybo-Z7-HW_files (this command will change the working directory where Vivado is executing the tcl commands)
-      source Zybo-Z7-HW.tcl (this command will create the Vivado project, include sources,ips and build the Block Design)
+# Create Vivado Hardware Project for Zybo-Z7
 
-Note: Be carefull with path length, Vivado does not like long path and it can lead to errors (especially with block design modules).
+Follow the steps below to set up your Vivado hardware project:
 
-This will create a folder Zybo-Z7-HW containing the new Vivado project.
+## Step 1: Open Vivado
 
-You can edit the Hardware in this project and then export the xsa file for Vitis by following the next steps:
-1) Generate bitstream
-2) Export Hardware files for Vitis (.xsa): File > Export > Export Hardware > Next > Include bitstream > Next > Finish
+## Step 2: Run TCL Commands
+
+In the **TCL Console**, execute the following commands:
+
+```tcl
+cd {C:/absolute/path/to}/Zybo-Z7-HW_files
+```
+- This command changes the working directory to the folder where the TCL commands will execute.
+
+```tcl
+source Zybo-Z7-HW.tcl
+```
+- This command creates the Vivado project, adds sources, IPs, and builds the block design.
+
+> **Note:**  
+> Be cautious with the path length. Vivado has limitations with long paths, especially for block design modules, which may result in errors. Use shorter paths if you encounter issues.
+
+## Step 3: Locate the Generated Project
+
+After running the above commands, a folder named `Zybo-Z7-HW` will be created. This folder contains the new Vivado project.
+
+---
+
+## Editing Hardware and Exporting for Vitis
+
+Once your project is created, you can edit the hardware design and export the necessary `.xsa` file for Vitis. Follow these steps:
+
+1. **Generate the Bitstream**  
+   - In Vivado, click **Generate Bitstream**.
+
+2. **Export Hardware Files for Vitis**  
+   - Go to **File** > **Export** > **Export Hardware**.  
+   - In the dialog:
+     - **Include Bitstream**: Check this option.
+   - Click **Next**, then **Finish**.
+
+---
+
+This `.xsa` file can now be used with Vitis to develop software for the Zybo-Z7 platform.
