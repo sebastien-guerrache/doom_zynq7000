@@ -10,6 +10,6 @@ This project is based on the work of:
 - **[Doomed Thermostat](https://hackaday.com/2017/05/22/doomed-thermostat/)** for `w_file_ram.c`
 
 ---
-<div class="logo"><img src="n7_logo.png" width="220px" align="right"></div>
+<div class="logo"><img src="n7_logo.png" width="180px" align="right"></div>
 
 **ENSEEIHT Students - DANLOS Julien & GUERRACHE Sébastien**
