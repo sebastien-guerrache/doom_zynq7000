@@ -4,3 +4,5 @@ This repo is a port of doomgeneric (itself based on Chocolate Doom) on the evalu
 Based on the work of:
 - doomgeneric (https://github.com/ozkl/doomgeneric/tree/master?tab=GPL-2.0-1-ov-file)
 - Doomed Thermostat for the w_file_ram.c (https://hackaday.com/2017/05/22/doomed-thermostat/)
+
+ENSEEIHT Students - DANLOS Julien & GUERRACHE Sébastien
