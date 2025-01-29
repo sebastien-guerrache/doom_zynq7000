@@ -6,4 +6,4 @@ Based on the work of:
 - Doomed Thermostat for the w_file_ram.c (https://hackaday.com/2017/05/22/doomed-thermostat/)
 
 ENSEEIHT Students - DANLOS Julien & GUERRACHE Sébastien
-<div class="logo"><img src="logo.png" width="220px" align="right"></div>
+<div class="logo"><img src="n7_logo.png" width="220px" align="right"></div>
