@@ -16,7 +16,7 @@
         "C_AXI_L_DATA_WIDTH": [ { "value": "32", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "C_AXI_L_ADDR_WIDTH": [ { "value": "6", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "ENABLE_STREAM": [ { "value": "true", "value_src": "user", "resolve_type": "user", "format": "bool", "usage": "all" } ],
-        "BIDIRECTIONAL_CLK": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ]
+        "BIDIRECTIONAL_CLK": [ { "value": "false", "value_src": "user", "resolve_type": "user", "format": "bool", "usage": "all" } ]
       },
       "model_parameters": {
         "C_DATA_WIDTH": [ { "value": "24", "resolve_type": "generated", "format": "long", "usage": "all" } ],
@@ -103,11 +103,11 @@
             "WIZ.DATA_WIDTH": [ { "value": "32", "value_src": "constant", "value_permission": "bd", "format": "long", "usage": "all" } ],
             "WIZ.NUM_REG": [ { "value": "10", "value_src": "constant", "value_permission": "bd", "format": "long", "usage": "all" } ],
             "SUPPORTS_NARROW_BURST": [ { "value": "0", "value_src": "constant", "value_permission": "bd_and_user", "format": "long", "usage": "all" } ],
-            "DATA_WIDTH": [ { "value": "32", "value_src": "auto", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "DATA_WIDTH": [ { "value": "32", "value_src": "auto", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "PROTOCOL": [ { "value": "AXI4LITE", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
             "FREQ_HZ": [ { "value": "100000000", "value_src": "user_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "ID_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "ADDR_WIDTH": [ { "value": "6", "value_src": "auto", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "ADDR_WIDTH": [ { "value": "6", "value_src": "auto", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "AWUSER_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "ARUSER_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "WUSER_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],

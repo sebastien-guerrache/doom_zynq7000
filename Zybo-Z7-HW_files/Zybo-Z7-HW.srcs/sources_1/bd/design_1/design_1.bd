@@ -1,13 +1,14 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xA6E7F6DCB363F21B",
+      "boundary_crc": "0xA6E7F6DC43814E87",
       "device": "xc7z010clg400-1",
       "gen_directory": "../../../../Zybo-Z7-HW.gen/sources_1/bd/design_1",
       "name": "design_1",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2024.1"
+      "tool_version": "2024.1",
+      "validated": "true"
     },
     "design_tree": {
       "axi_dynclk_0": "",
@@ -531,7 +532,7 @@
             "value": "200.000000"
           },
           "PCW_ACT_FPGA3_PERIPHERAL_FREQMHZ": {
-            "value": "10.000000"
+            "value": "90.909088"
           },
           "PCW_ACT_PCAP_PERIPHERAL_FREQMHZ": {
             "value": "200.000000"
@@ -591,7 +592,7 @@
             "value": "200000000"
           },
           "PCW_CLK3_FREQ": {
-            "value": "10000000"
+            "value": "90909088"
           },
           "PCW_CPU_CPU_6X4X_MAX_RANGE": {
             "value": "667"
@@ -660,7 +661,7 @@
             "value": "1"
           },
           "PCW_EN_CLK3_PORT": {
-            "value": "0"
+            "value": "1"
           },
           "PCW_EN_EMIO_I2C0": {
             "value": "0"
@@ -689,10 +690,16 @@
           "PCW_FCLK1_PERIPHERAL_CLKSRC": {
             "value": "DDR PLL"
           },
+          "PCW_FCLK3_PERIPHERAL_CLKSRC": {
+            "value": "IO PLL"
+          },
           "PCW_FCLK_CLK1_BUF": {
             "value": "TRUE"
           },
           "PCW_FCLK_CLK2_BUF": {
+            "value": "TRUE"
+          },
+          "PCW_FCLK_CLK3_BUF": {
             "value": "TRUE"
           },
           "PCW_FPGA0_PERIPHERAL_FREQMHZ": {
@@ -705,7 +712,7 @@
             "value": "200"
           },
           "PCW_FPGA3_PERIPHERAL_FREQMHZ": {
-            "value": "12.288"
+            "value": "90.3168"
           },
           "PCW_FPGA_FCLK0_ENABLE": {
             "value": "1"
@@ -714,6 +721,9 @@
             "value": "1"
           },
           "PCW_FPGA_FCLK2_ENABLE": {
+            "value": "1"
+          },
+          "PCW_FPGA_FCLK3_ENABLE": {
             "value": "1"
           },
           "PCW_GPIO_MIO_GPIO_ENABLE": {
@@ -726,9 +736,6 @@
             "value": "0"
           },
           "PCW_I2C0_PERIPHERAL_ENABLE": {
-            "value": "0"
-          },
-          "PCW_I2C0_RESET_ENABLE": {
             "value": "0"
           },
           "PCW_I2C_RESET_ENABLE": {
@@ -4405,6 +4412,9 @@
         "xci_path": "ip\\design_1_d_axi_i2s_audio_0_0\\design_1_d_axi_i2s_audio_0_0.xci",
         "inst_hier_path": "d_axi_i2s_audio_0",
         "parameters": {
+          "BIDIRECTIONAL_CLK": {
+            "value": "false"
+          },
           "ENABLE_STREAM": {
             "value": "true"
           }
@@ -4685,7 +4695,6 @@
           "axi_iic_0/s_axi_aclk",
           "axi_interconnect_gp0/M10_ACLK",
           "d_axi_i2s_audio_0/AXI_L_aclk",
-          "d_axi_i2s_audio_0/CLK_100MHZ_I",
           "d_axi_i2s_audio_0/S_AXIS_MM2S_ACLK",
           "d_axi_i2s_audio_0/M_AXIS_S2MM_ACLK",
           "axi_dma_0/m_axi_mm2s_aclk",
@@ -4898,6 +4907,12 @@
         "ports": [
           "processing_system7_0/FCLK_CLK2",
           "dvi2rgb_0/RefClk"
+        ]
+      },
+      "processing_system7_0_FCLK_CLK3": {
+        "ports": [
+          "processing_system7_0/FCLK_CLK3",
+          "d_axi_i2s_audio_0/CLK_100MHZ_I"
         ]
       },
       "subset_converter_reset_dout": {
