@@ -5,7 +5,7 @@ Follow the steps below to set up your Vivado hardware project:
 ## Step 1: Open Vivado
 
 > **Note:**  
-> This project was developed using Vivado 2024.1.
+> Ensure you have Vivado 2024.1 or later installed.
 
 ## Step 2: Run TCL Commands
 
