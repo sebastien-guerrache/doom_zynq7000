@@ -11,6 +11,9 @@ This project is based on the work of:
 - **[tinymidipcm](https://github.com/misterhat/tinymidipcm/tree/master)**
 
 ---
-<div class="logo"><img src="n7_logo.png" width="180px" align="right"></div>
+
+![Guide](figures/guide.png)
+
+![Controller](figures/controller_guide.png)
 
 **ENSEEIHT Students - DANLOS Julien & GUERRACHE Sébastien**
