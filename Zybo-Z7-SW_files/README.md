@@ -1,5 +1,8 @@
 ## Create Vitis Classic Software Project for Zybo-Z7
 
+> **Note:**  
+> Please refer to the ReadMe.md in the doomgeneric directory to be fully prepared for the following actions
+
 Follow the steps below to set up your Vitis Classic project:
 
 ## Step 1: Open Vitis Classic
@@ -49,6 +52,10 @@ Follow the steps below to set up your Vitis Classic project:
 2. **Run the Application**  
    - Right-click on your application project and select **Run As** > **Launch on Hardware (System Debugger)**.
 
+
+Your application should now be running on the Zybo-Z7 platform. Enjoy!
+
+
 ## Bonus: Open Terminal for Debugging in Vitis Classic
 
 1. **Open Terminal**  
@@ -62,7 +69,7 @@ Follow the steps below to set up your Vitis Classic project:
 3. **Use Terminal for Debugging**  
    - Use the terminal to interact with your application for debugging purposes.
 
-Your application should now be running on the Zybo-Z7 platform. Enjoy!
+
 
 
 
